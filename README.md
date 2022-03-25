@@ -1,1 +1,1 @@
-# Computers-Sfia
+The project consists of 4 services: DOM parser, SAX parser, StAX parser and JAXB. In each of the services, control is transferred to the DAO layer to read information from the file by the parser, then the data is converted into objects through the Builder pattern (all except SAX). After that, the service layer converts this data into a readable format and displays it on the screen
