@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="devices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="cpu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="origin"/>
+              <xs:element type="xs:double" name="price"/>
+              <xs:element type="xs:int" name="energyConsumption"/>
+              <xs:element type="xs:string" name="type"/>
+              <xs:element type="xs:boolean" name="critical"/>
+              <xs:element type="xs:double" name="clockRate"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="datastorage">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="origin"/>
+              <xs:element type="xs:double" name="price"/>
+              <xs:element type="xs:int" name="energyConsumption"/>
+              <xs:element type="xs:string" name="type"/>
+              <xs:element type="xs:boolean" name="critical"/>
+              <xs:element type="xs:int" name="capacity"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="id"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="heatsink">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="origin"/>
+              <xs:element type="xs:double" name="price"/>
+              <xs:element type="xs:int" name="energyConsumption"/>
+              <xs:element type="xs:string" name="type"/>
+              <xs:element type="xs:boolean" name="critical"/>
+              <xs:element type="xs:string" name="coolingType"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="keyboard">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="origin"/>
+              <xs:element type="xs:double" name="price"/>
+              <xs:element type="xs:int" name="energyConsumption"/>
+              <xs:element type="xs:string" name="type"/>
+              <xs:element type="xs:boolean" name="critical"/>
+              <xs:element type="xs:boolean" name="lights"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="motherboard">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="origin"/>
+              <xs:element type="xs:double" name="price"/>
+              <xs:element type="xs:int" name="energyConsumption"/>
+              <xs:element type="xs:string" name="type"/>
+              <xs:element type="xs:boolean" name="critical"/>
+              <xs:element type="xs:string" name="formFactor"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mouse">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="origin"/>
+              <xs:element type="xs:double" name="price"/>
+              <xs:element type="xs:int" name="energyConsumption"/>
+              <xs:element type="xs:string" name="type"/>
+              <xs:element type="xs:boolean" name="critical"/>
+              <xs:element type="xs:byte" name="numOfButtons"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="powersupply">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="origin"/>
+              <xs:element type="xs:double" name="price"/>
+              <xs:element type="xs:int" name="energyConsumption"/>
+              <xs:element type="xs:string" name="type"/>
+              <xs:element type="xs:boolean" name="critical"/>
+              <xs:element type="xs:int" name="powerRating"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ram">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="origin"/>
+              <xs:element type="xs:double" name="price"/>
+              <xs:element type="xs:int" name="energyConsumption"/>
+              <xs:element type="xs:string" name="type"/>
+              <xs:element type="xs:boolean" name="critical"/>
+              <xs:element type="xs:string" name="RAMType"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="screen">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="origin"/>
+              <xs:element type="xs:double" name="price"/>
+              <xs:element type="xs:int" name="energyConsumption"/>
+              <xs:element type="xs:string" name="type"/>
+              <xs:element type="xs:boolean" name="critical"/>
+              <xs:element type="xs:int" name="size"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="speaker">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="origin"/>
+              <xs:element type="xs:double" name="price"/>
+              <xs:element type="xs:int" name="energyConsumption"/>
+              <xs:element type="xs:string" name="type"/>
+              <xs:element type="xs:boolean" name="critical"/>
+              <xs:element type="xs:int" name="soundPower"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
